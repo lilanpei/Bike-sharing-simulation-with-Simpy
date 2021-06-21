@@ -30,9 +30,9 @@
 ## Case study :
 1. Base case (no **Patience strategy**, no Refilling strategy **Refilling strategy**).
 2. Base case + **Patience strategy**.
-3. Grid search for **Num_vehieles**.
-4. Grid search for **capacity**.
-5. Grid search for **init_ratio**.
-6. Grid search for **reset_ratio**.
-7. Grid search for **reset_threshold**.
-8. Grid search for **reset_delay**.
+3. More fine-grained search for **Num_vehieles** and results demonstration.
+4. More fine-grained search for **capacity** and results demonstration.
+5. More fine-grained search for **init_ratio** and results demonstration.
+6. More fine-grained search for **reset_ratio** and results demonstration.
+7. More fine-grained search for **reset_threshold** and results demonstration.
+8. More fine-grained search for **reset_delay** and results demonstration.
