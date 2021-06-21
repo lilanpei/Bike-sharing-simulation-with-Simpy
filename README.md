@@ -2,12 +2,12 @@
 
 ## Station :
 
-* The bike-sharing staion with a capacity(maximum number of bikes/docks), init with init_ratio timesby capacity of bikes.
-* The monitor process : when the bikes in the station(a container) <= capacity timesby reset_ratio or >= capacity timesby (1-reset_ratio), the calling of reset staion will triggered, the station will be reset with half number of capacity of bikes when the refilling vehicle arrived.
+* The bike-sharing station with a capacity(maximum number of bikes/docks), init with init_ratio times by capacity of bikes.
+* The monitor process : when the bikes in the station(a container) <= capacity times by reset_ratio or >= capacity times by (1-reset_ratio), the calling of reset station will triggered, the station will be reset with half number of capacity of bikes when the refilling vehicle arrived.
 
 ## Depot Station :
-* The depot staion with capacity(num_vehicles), a vehicle is a container which has the ability to reset maximum half number stations.
-* The monitor process : when a vehicle accumulate for capacity minus reset_threshold number of request for reset or the reset_delay divide delay_rate of time passed.(the delay rate is the rate for generating passengers in different period of time during the day timesby 0.5)
+* The depot station with capacity(num_vehicles), a vehicle is a container which has the ability to reset maximum half number stations.
+* The monitor process : when a vehicle accumulate for capacity minus reset_threshold number of request for reset or the reset_delay divide delay_rate of time passed.(the delay rate is the rate for generating passengers in different period of time during the day times by 0.5)
 
 ## Passenger :
 * The passengers (around 3720 with the current rate) will be generated with different rate in five periods(early-hours, morning, noon, evening, midnight) of a day, the time interval between consecutive passengers follows the exponential distributing.
