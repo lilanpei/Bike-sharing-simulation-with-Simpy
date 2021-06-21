@@ -15,13 +15,13 @@
 * The passenger will run out of patience when waiting for a random number of minutes from 20 to 30 to put a bike and then leave the station with the bike thrown away at the station.
 
 ## Main :
-* Start running the station for five perioids (early-hours, morning, noon, evening, midnight) with different rate for refilling and generate passgengers.
+* Start running the station for five periods (early-hours, morning, noon, evening, midnight) with different rate for refilling and generate passengers.
 
 ## Grid search parameters :
-1. Number of total vehicles the depot station have : **num_vehicles** in range [1,2,5,10]
-2. Maximum number of bikes each station have : **capacity** in range [5,10,20]
-3. The initial percentage of N.bikes in the capacity of each station : **init_ratio** in range [0.6,0.7,0.8]
-4. The percentage of N.bikes in the capacity of each station when calling for refilling : **reset_ratio** in range [0.1,0.2]
-5. The threshold number of stations calling for a certain vehicle to reset : **reset_threshold** in range [5,6,7,8,9]
-6. The time interval for a vehicle to reset the stations when the threshold is not reach : **reset_delay** in range [5,10,20,30,60]
-7. The number of stations we have : **num_stations** in range [20]
+1. The number of stations : **num_stations** fixed to 20.
+2. Number of total vehicles the depot station have : **num_vehicles** in range [5,10,20]
+3. Maximum number of bikes each station have : **capacity** in range [5,15,25]
+4. The initial percentage of N.bikes in the capacity of each station : **init_ratio** in range [0.6,0.7,0.8]
+5. The percentage of N.bikes in the capacity of each station when calling for refilling : **reset_ratio** in range [0.1,0.3,0.5]
+6. The threshold number of stations calling for a certain vehicle to reset : **reset_threshold** in range [4,6,8]
+7. The time interval for a vehicle to reset the stations when the threshold is not reach : **reset_delay** in range [10,20,30]
