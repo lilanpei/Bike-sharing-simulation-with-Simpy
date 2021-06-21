@@ -12,7 +12,7 @@
 ## Passenger :
 * The passengers (around 3720 with the current rate) will be generated with different rate in five periods(early-hours, morning, noon, evening, midnight) of a day, the time interval between consecutive passengers follows the exponential distributing.
 * The passenger will run out of patience when waiting for a random number of minutes from 10 to 20 to get a bike and leave the station.
-* The passenger will run out of patience when waiting for a random number of minutes from 20 to 30 to put a bike and then leave the station with the bike throwed away at the station.
+* The passenger will run out of patience when waiting for a random number of minutes from 20 to 30 to put a bike and then leave the station with the bike thrown away at the station.
 
 ## Main :
 * Start running the station for five perioids (early-hours, morning, noon, evening, midnight) with different rate for refilling and generate passgengers.
