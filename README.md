@@ -2,7 +2,7 @@
 
 ## Station :
 
-* The bike-sharing station with a capacity(maximum number of bikes/docks), init with init_ratio \times capacity of bikes.
+* The bike-sharing station with a capacity(maximum number of bikes/docks), init with $init_ratio \times capacity of bikes$.
 * The monitor process : when the bikes in the station(a container) <= capacity times by reset_ratio or >= capacity times by (1-reset_ratio), the calling of reset station will triggered, the station will be reset with half number of capacity of bikes when the refilling vehicle arrived.
 
 ## Depot Station :
