@@ -6,16 +6,17 @@
 * The monitor process : If #bikes/capacity is not in the range[reset_ratio, 1-reset_ratio], repositioning vehicle will be called to refill/remove bikes, resetting the station to a state that one half is empty, and one half is filled with bikes.
 
 ## Depot Station :
-* The depot station with capacity(num_vehicles), a vehicle is a container which has the ability to reset maximum half number stations.
-* The monitor process : when a vehicle accumulate for capacity minus reset_threshold number of request for reset or the reset_delay divide delay_rate of time passed.(the delay rate is the rate for generating passengers in different period of time during the day times by 0.5)
+* Init with capacity(num_vehicles). A vehicle is a container with capacity 10, meaning one vehicle can only serve at most 10 stations during one trip.
+* The monitor process : when a vehicle receives calls from some number of stations,  then it start departing to serve them. Note the number could be different in peak commuting hours.
 
 ## Passenger :
-* The passengers (around 3720 with the current rate) will be generated with different rate in five periods(early-hours, morning, noon, evening, midnight) of a day, the time interval between consecutive passengers follows the exponential distributing.
-* The passenger will run out of patience when waiting for a random number of minutes from 10 to 20 to get a bike and leave the station.
-* The passenger will run out of patience when waiting for a random number of minutes from 20 to 30 to put a bike and then leave the station with the bike thrown away at the station.
+* Passengers are generated with different arrival rates in five periods(early-hours, morning, noon, evening, midnight), amounting to around 3720 per day. The time interval between two consecutive passenger follows the exponential distribution.
+* Passengers have a limited patience to get/put a bike
+   >>(10, 20) minutes to get a bike, otherwise they would leave.
+   >> (20, 30) minutes to put a bike, otherwise they may not park the bike in the dock properly.
 
 ## Main :
-* Start running the station for five periods (early-hours, morning, noon, evening, midnight) with different rate for refilling and generate passengers.
+* Run the system.
 
 ## Grid search parameters :
 1. The number of stations : **num_stations** fixed to 20.
