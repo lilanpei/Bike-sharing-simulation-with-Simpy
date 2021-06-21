@@ -19,10 +19,15 @@
 * Run the system.
 
 ## Grid search parameters :
-1. The number of stations : **num_stations** fixed to 20.
-2. Number of total vehicles the depot station have : **num_vehicles** in range [5,10,20]
-3. Maximum number of bikes each station have : **capacity** in range [5,15,25]
-4. The initial percentage of N.bikes in the capacity of each station : **init_ratio** in range [0.6,0.7,0.8]
-5. The percentage of N.bikes in the capacity of each station when calling for refilling : **reset_ratio** in range [0.1,0.3,0.5]
-6. The threshold number of stations calling for a certain vehicle to reset : **reset_threshold** in range [4,6,8]
-7. The time interval for a vehicle to reset the stations when the threshold is not reach : **reset_delay** in range [10,20,30]
+1. **num_stations** (20) : the number of stations. 
+2. **num_vehicles** ([5,10,20]) : the number of vehicles in a depot station.
+3. **capacity** ([5,15,25]) : the capacity of each station.
+4. **init_ratio** ([0.6,0.7,0.8]) : #bikes / capacity in each station initially.
+5. **reset ratio** ([0.1,0.3,0.5]) : #bikes/capacity to call for repositioning vehicles.
+6. **reset_threshold** ([4,6,8]) : the number of stations received (10 - reset_threshold) for a vehicle to depart. 
+7. **reset_delay** ([10,20,30]) : the time interval to send a vehicle.
+
+## Case study :
+1. Base case (no **Patience strategy**, no Refilling strategy **Refilling strategy**).
+2. Base case + **Patience strategy**.
+3. 
