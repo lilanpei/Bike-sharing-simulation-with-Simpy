@@ -12,8 +12,8 @@
 ## Passenger :
 * Passengers are generated with different arrival rates in five periods(early-hours, morning, noon, evening, midnight), amounting to around 3720 per day. The time interval between two consecutive passenger follows the exponential distribution.
 * Passengers have a limited patience to get/put a bike
-   >>(10, 20) minutes to get a bike, otherwise they would leave.
-   >> (20, 30) minutes to put a bike, otherwise they may not park the bike in the dock properly.
+   >> * (10, 20) minutes to get a bike, otherwise they would leave.
+   >> * (20, 30) minutes to put a bike, otherwise they may not park the bike in the dock properly.
 
 ## Main :
 * Run the system.
